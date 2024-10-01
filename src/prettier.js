@@ -5,6 +5,6 @@ module.exports = {
   semi: true,
   tabWidth: 2,
   trailingComma: "all",
-  singleQuote: true,
+  singleQuote: false,
   plugins: ["prettier-plugin-tailwindcss"],
 };
