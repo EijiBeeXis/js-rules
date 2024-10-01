@@ -73,6 +73,8 @@ To ensure the best development experience, you can create a `.vscode` folder in 
 
 ```json
 {
+  "editor.formatOnSave": true,
+  "prettier.requireConfig": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
@@ -87,13 +89,7 @@ To ensure the best development experience, you can create a `.vscode` folder in 
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": false
-    }
-  },
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "editor.formatOnSave": true
   }
 }
 ```
