@@ -13,8 +13,17 @@ module.exports = {
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
+    "plugin:prettier/recommended",
+    "plugin:tailwindcss/recommended",
   ],
-  plugins: ["react", "react-hooks", "@typescript-eslint", "import"],
+  plugins: [
+    "react",
+    "react-hooks",
+    "@typescript-eslint",
+    "import",
+    "prettier",
+    "tailwindcss",
+  ],
   parser: "@typescript-eslint/parser",
   rules: {
     // configs eslint import
@@ -55,6 +64,10 @@ module.exports = {
     // configs eslint undef and console
     "no-undef": "error",
     "no-console": "error",
+    // configs eslint prettier and tailwindcss
+    "prettier/prettier": "error",
+    "tailwindcss/classnames-order": "warn",
+    "tailwindcss/no-custom-classname": "off",
   },
   settings: {
     "import/parsers": {
@@ -67,4 +80,4 @@ module.exports = {
       version: "detect",
     },
   },
-}
+};
